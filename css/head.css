@@ -1,0 +1,514 @@
+/*共同样式*/
+.common_width{
+	width:1200px;
+	margin:0 auto;
+}
+/*头部样式开始*/
+header{
+	width:100%;
+	height: 60px;
+	position: fixed;
+	z-index: 2;
+	background: rgba(0,0,0,0.5);
+}
+header img{
+	float: left;
+	padding: 14px 0 15px;
+	cursor: pointer;
+}
+header ul{
+	float: right;
+	line-height: 60px;
+}
+header ul li{
+	float: left;
+	width: 84px;
+	height: 60px;
+}
+header ul li a{
+	color:#FCFCFC;
+	display: block;
+	width: 84px;
+	height: 60px;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+header ul li.active a,header ul li a:hover{
+	background: #BF4908;
+}
+/*头部样式结束*/
+/*轮播图样式开始*/
+.banner_box{
+	width: 100%;
+	height: 540px;
+	position: relative;
+}
+.banner_box .slide li img{
+	width:100%;
+	height: 540px;
+}
+.banner_cover{
+	width: 100%;
+	height: 540px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.68);
+}
+.banner_cover .font_box{
+	width: 500px;
+	height: 380px;
+	margin: 160px auto 0;
+}
+.banner_cover .font_box h2{
+	color:#FFF;
+	font-weight: bold;
+	font-family: "微软雅黑";
+	font-size: 48px;
+	text-align: center;
+}
+.banner_cover .font_box span{
+	display: block;
+	width: 84px;
+	height: 2px;
+	background: #FF722E;
+	margin: 50px auto 30px;
+}
+.banner_cover .font_box p{
+	text-align: center;
+	font-size: 24px;
+	font-family: "微软雅黑";
+	color:#fff;
+	margin-bottom: 20px;
+}
+.banner_cover .font_box ul{
+	width: 160px;
+	margin: 130px auto 45px;
+}
+.banner_cover .font_box ul li{
+	float: left;
+	width: 39px;
+	height: 9px;
+	background: #939393;
+	margin-right: 13px;
+	cursor: pointer;
+}
+.banner_cover .font_box ul li.active,.banner_cover .font_box ul li:hover{
+	background: #DDDDDD;
+}
+.banner_cover .left{
+	position: absolute;
+	left: 48px;
+	top: 50%;
+}
+.banner_cover .left_box{
+	width: 120px;
+	height: 540px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	cursor: pointer;
+}
+.banner_cover .right_box{
+	width: 120px;
+	height: 540px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+}
+.banner_cover .left_box:hover .left{
+	background: url(../img/left2.png);
+}
+.banner_cover .right{
+	position: absolute;
+	right: 48px;
+	top: 50%;
+}
+.banner_cover .right_box:hover .right{
+	background: url(../img/right2.png);
+}
+/*轮播图样式结束*/
+/*内容样式--services 开始*/
+.content_box{
+	width: 100%;
+	overflow: hidden;
+}
+.content_box .service{
+	background: #fff;
+	overflow: hidden;
+}
+.service h3,.case h3,.about .about_cover h3,.news h3,.partner h3,.contact h3{
+	color:#4F7346;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: "微软雅黑";
+	text-align: center;
+	padding-top: 48px;
+}
+.service h5,.case h5,.about .about_cover h5,.news h5,.partner h5,.contact h5{
+	color:#4F7346;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: "微软雅黑";
+	text-align: center;
+}
+.service span,.case span,.about .about_cover span,.news span,.partner span,.contact span{
+	display: block;
+	width: 406px;
+	height: 1px;
+	background: #C9C9C9;
+	margin: 15px auto;
+}
+.service p,.about .about_cover p,.news p,.partner p,.contact p{
+	font-size: 18px;
+	text-align: center;
+}
+.service .project ul{
+	width: 1000px;
+	margin: 50px auto;
+	overflow: hidden;
+}
+.service .project ul li img{
+	display: block;
+	margin: 0 auto 30px;
+	height: 107px;
+}
+.service .project ul li:nth-child(2) img{
+	padding-left: 15px;
+}
+.service .project ul li:nth-child(4) img{
+	padding-left: 5px;
+}
+.service .project ul li{
+	float: left;
+	text-align: center;
+	width: 160px;
+	cursor: pointer;
+}
+.service .project ul li a{
+	font-size: 16px;
+	color:#4B4B4B;
+}
+/*内容样式--services 结束*/
+/*内容样式--cases 开始*/
+.case{
+	background: #EDEDED;
+	overflow: hidden;
+}
+.case .nav{
+	margin: 0 auto 20px;
+	width: 670px;
+	overflow: hidden;
+}
+.case .nav li{
+	float: left;
+	padding: 0 25px;
+	text-align: center;
+}
+.case .nav li a{
+	color:#8F8F8F;
+	font-size: 18px;
+}
+.case .nav li.active a,.case .nav li:hover a{
+	color:#EC681B;
+}
+.case .img{
+	overflow: hidden;	
+	margin: 0 auto 50px;
+}
+.case .img li{
+	width: 289px;
+	height: 203px;
+	float: left;
+	margin-right: 14px;
+	margin-bottom: 13px;
+	cursor: pointer;
+}
+.case .img li:nth-child(4),.case .img li:last-child{
+	margin-right: 0;
+}
+/*内容样式--cases 结束*/
+/*内容样式--about us 开始*/
+.about{
+	height: 432px;
+	background: url(../img/bg.jpg) fixed;
+	background-size: 100%;
+	position: relative;
+}
+.about .about_cover{
+	width: 100%;
+	height: 432px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(255,86,0,0.24);
+}
+.about .about_cover h3{
+	color: #fff;
+}
+.about .about_cover h5{
+	color: #DCDCDC;
+}
+.about .about_cover p{
+	color:#CCCACA;
+}
+.about .about_cover h4{
+	font-size: 16px;
+	text-align: center;
+	color:#FDFDFD;
+	margin-top: 40px;
+}
+.about .about_cover i{
+	display: block;
+	width: 30px;
+	height: 55px;
+	background: url(../img/png_icon.png) right 0 no-repeat;
+	margin: 40px auto 5px;
+}
+.about .about_cover button{
+	display: block;
+	width: 148px;
+	height: 36px;
+	border-radius: 8px;
+	background: #FFF;
+	text-align: center;
+	line-height: 32px;
+	color:#FB8147;
+	margin: 0 auto;
+	font-size: 16px;
+	cursor: pointer;
+	font-family:"微软雅黑";
+}
+/*内容样式--about us 结束*/
+/*内容样式--news 开始*/
+.news{
+	overflow: hidden;
+	background: #fff;
+}
+.news h5{
+	position: relative;
+	margin-top: 5px;
+}
+.news h5 b{
+	display: block;
+	width: 24px;
+	height: 24px;
+	background: #FC8902;
+	border-radius: 50%;
+	position: absolute;
+	right: 550px;
+	bottom: 3px;
+	color:#fff;
+	font-size: 18px;
+	line-height: 20px;
+}
+.news .news_box ul{
+	width: 975px;
+	overflow: hidden;
+	margin: 50px auto 0;
+}
+.news .news_box ul li{
+	width: 460px;
+	height: 120px;
+	float: left;
+	margin-right: 25px;
+}
+.news .news_box ul li.active .left,.news .news_box ul li:hover .left{
+	background: #4F7446;
+}
+.news .news_box ul li.active .left h4,.news .news_box ul li:hover .left h4{
+	color:#fff;
+}
+.news .news_box ul li.active .left h6,.news .news_box ul li:hover .left h6{
+	color:#ebebeb;
+}
+.news .news_box ul li.active .right,.news .news_box ul li:hover .right{
+	background: #515151;
+}
+.news .news_box ul li.active .right h2 a,.news .news_box ul li:hover .right h2 a{
+	color:#fff;
+}
+.news .news_box ul li.active .right h4,.news .news_box ul li:hover .right h4{
+	color:#ccc;
+}
+.news .news_box ul li:nth-child(2),.news .news_box ul li:nth-child(4){
+	margin-right: 0;
+}
+.news .news_box .left{
+	width: 72px;
+	height: 72px;
+	background: #E7E7E7;
+	float: left;
+}
+.news .news_box .right{
+	float: left;
+	width: 385px;
+	padding-bottom: 20px;
+}
+.news .news_box .right h2{
+	font-size: 16px;
+	margin: 15px 0 5px 10px;
+}
+.news .news_box .left h4{
+	font-size: 18px;
+	color:#000;
+	text-align: center;
+	margin-top: 15px;
+}
+.news .news_box .left h6{
+	color:#323232;
+	font-size: 12px;
+	text-align: center;
+	height: 20px;
+	line-height: 8px;
+	text-indent: 5px;
+}
+.news .news_box .right h2 a{
+	color:#000;
+}
+.news .news_box .right h2 .icon{
+	float: right;
+	color:#fff;
+	margin-right: 10px;
+}
+.news .news_box .right h4{
+	color:#737373;
+	font-size: 12px;
+	line-height: 20px;
+	width: 325px;
+	margin-left: 10px;
+}
+/*内容样式--news 结束*/
+/*内容样式--partner 开始*/
+.partner{
+	background: #fff;
+}
+.partner p{
+	margin-bottom: 50px;
+}
+.partner ul{
+	margin-left: 50px;
+}
+.partner ul li{
+	float: left;
+	margin:0 50px 40px 0;
+	cursor: pointer;
+}
+.partner ul li:nth-child(6),.partner ul li:last-child{
+	margin-right: 0;
+}
+/*内容样式--partner 结束*/
+/*内容样式--contact us 开始*/
+.contact{
+	width:100%;
+	height: 400px;
+	background:#353535;
+	position: relative;
+}
+.contact h3{
+	padding-top:30px;
+	color:#fff;
+}
+.contact h5{
+	color:#D9D9D9;
+}
+.contact span{
+	width:420px;
+	margin:10px auto 5px;
+}
+.contact p{
+	color:#fff;
+	margin-bottom: 10px;
+	font-size:14px;
+}
+.contact .left{
+	width:370px;
+	overflow: hidden;
+	float: left;
+	color:#e1e1e1;
+	font-size:12px;
+	margin-left: 65px;
+}
+.contact .center{
+	width:320px;
+	overflow: hidden;
+	float: left;
+}
+.contact .center img{
+	display: block;
+	margin:0 auto;
+}
+.contact .center ul{
+	width:240px;
+	height:40px;
+	margin: 10px auto;
+}
+.contact .center ul li{
+	width:35px;
+	height:30px;
+	float: left;
+	cursor: pointer;
+	margin-left: 20px;
+}
+.contact .center ul li.qq{
+	background:url(../img/png_icon.png) 0 0 no-repeat;
+}
+.contact .center ul li.qq:hover{
+	background:url(../img/png_icon.png) -42px 0 no-repeat;
+}
+.contact .center ul li.wechat{
+	background:url(../img/png_icon.png) -88px 0 no-repeat;
+}
+.contact .center ul li.wechat:hover{
+	background:url(../img/png_icon.png) -140px 0 no-repeat;
+}
+.contact .center ul li.weibo{
+	background:url(../img/png_icon.png) -286px 0 no-repeat;
+}
+.contact .center ul li.weibo:hover{
+	background:url(../img/png_icon.png) -328px 0 no-repeat;
+}
+.contact .center ul li.sina{
+	background:url(../img/png_icon.png) -188px 0 no-repeat;
+}
+.contact .center ul li.sina:hover{
+	background:url(../img/png_icon.png) -237px 0 no-repeat;
+}
+.contact .right{
+	width:400px;
+	overflow: hidden;
+	float: right;
+	color:#e1e1e1;
+	font-size:12px;
+}
+.contact footer{
+	height:90px;
+	width:100%;
+	background:rgba(0,0,0,0.5);
+	position: absolute;
+	bottom:0;
+}
+.contact footer p{
+	font-size:14px;
+	color:#666;
+	line-height: 10px;
+}
+.contact footer p:first-child{
+	padding-top: 30px;
+}
+.contact .cover{
+	width:100%;
+	height: 310px;
+	position: absolute;
+	top:0;
+	background:rgba(0,0,0,0.1);
+}
+/*.contact .map{
+	position: absolute;
+	top:-50px;
+	left: 28%;
+	opacity:0.05;
+}
+*//*内容样式--contact us 结束*/
